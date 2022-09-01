@@ -4,13 +4,14 @@ Created on Wed Jun 28 09:00:39 2017
 
 @author: rauli
 """
-
-from flask import Flask, request, jsonify, abort, make_response, session, render_template
-from flask_httpauth import HTTPBasicAuth
 from datetime import datetime
 import sqlite3
-import json
 import hashlib
+from flask import Flask, request, render_template
+from flask_httpauth import HTTPBasicAuth
+
+
+
 
 DBNAME = './quiz.db'
 
@@ -154,6 +155,7 @@ def main():
             result = 'OK!'
 
         setUserQuiz(auth.username(), id, sent, feedback, result)
+        setUserQuiz(auth.username(), 2, sent, feedback, result)
 
 
     if request.method == 'GET':
