@@ -1,0 +1,7 @@
+site_name: Projeto Profissional - Servidor de Desafios
+nav:
+    - Sobre o projeto: index.md
+    - Para o Desenvolvedor: dev.md
+    - Para o Usuário: user.md
+theme:
+  name: readthedocs
