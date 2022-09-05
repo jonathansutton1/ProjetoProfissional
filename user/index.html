@@ -65,8 +65,6 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#adicionando-usuarios">Adicionando usuários</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#adicionando-desafios">Adicionando desafios</a>
-    </li>
         </ul>
     </li>
     </ul>
@@ -98,13 +96,20 @@
                 <h1 id="para-o-usuario">Para o usuário</h1>
 <h2 id="se-voce-e-aluno">Se você é aluno</h2>
 <h3 id="como-entrar-no-servidor-de-desafios">Como entrar no servidor de desafios</h3>
+<p>Os seus professores devem ter disponibilizado um link para vocês, no BlackBoard ou no email. Abra ele.
+Seu usuário é o mesmo do Insper, e a senha é o mesmo nome de usuário (fique tranquilo, você poderá mudar depois).</p>
 <h3 id="enviando-solucao-correta">Enviando solução correta</h3>
+<p>Caso você acerte o código do exercício, o servidor irá te informar que está tudo correto. Parabéns!</p>
 <h3 id="enviando-solucao-errada">Enviando solução errada</h3>
+<p>Caso você erre, o servidor analisará quais testes passaram e quais não. Com isso, haverá um feedback para cada erro cometido. Use esses feedbacks para chegar até o código certo, não desista!</p>
 <h2 id="se-voce-e-professor">Se você é professor</h2>
 <h3 id="adicionando-usuarios">Adicionando usuários</h3>
-<p>(usando os arquivos users.csv e add_user.py)</p>
-<h3 id="adicionando-desafios">Adicionando desafios</h3>
-<p>(Linha de comando mesmo)</p>
+<p>Para adicionar um usuário novo, adicione no arquivo <em>users.csv</em> um usuário novo (se o arquivo não existe ainda, pode criá-lo). Para adicionar um aluno com o usuario "pedrosilva", por exemplo, será preciso escrever o seguinte:</p>
+<p>pedrosilva, student</p>
+<p>Logo em seguida, execute o arquivo <em>adduser.py</em> escrevendo no terminal:</p>
+<pre><code>python3 adduser.py
+</code></pre>
+<p>Pronto! O usuário já conseguirá acessar o servidor!</p>
               
             </div>
           </div><footer>
