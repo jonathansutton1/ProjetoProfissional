@@ -7,7 +7,6 @@ Primeiramente, será preciso instalar o Framework [Flask](https://flask.palletsp
 ```
 pip install Flask
 pip install flask_httpauth
-
 ```
 
 Com isso, você terá todas bibliotecas do Flask instaladas e prontas para rodarem. A seguir, é preciso executar o comando ```flask --app softdes run```, é gerado um servidor no link **http://127.0.0.1:5000/**. Com isso, será possível fazer todas as modificações com o servidor rodado, e caso queira fazer uma mudança depois, é possível fazer o deploy. 
@@ -27,7 +26,9 @@ Depois disso, é preciso rodar o arquivo *quiz.db*. A maneira mais eficaz de faz
 sudo apt install sqlitebrowser
 ```
 
+Abra o [DB Browser for SQLite](https://sqlitebrowser.org/) e abra o arquivo *quiz.db*. Na aba "*Browse Data*", é possível ver os usuários adicionados e seus tipos, como mostra [essa foto](./img/dbbrowser.png).
 
+Para logar, é preciso ter o usuário adicionado. A senha é o próprio nome do usuário, e é possível mudar ela dentro da página, conforme pode ser visto [aqui](./img/servidor.png).
 
 ## Estrutura do código em alto nível
-Base de dados SQL
+Esse código utiliza uma base de dados SQL (para os usuários) e o framework Flask para a criação do servidor que será utilizado.
