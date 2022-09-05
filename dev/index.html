@@ -88,7 +88,6 @@
 <p>Primeiramente, será preciso instalar o Framework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>. Os seguintes comandos precisarão ser rodados na linha de comando (caso você tenha o pip instalado).</p>
 <pre><code>pip install Flask
 pip install flask_httpauth
-
 </code></pre>
 <p>Com isso, você terá todas bibliotecas do Flask instaladas e prontas para rodarem. A seguir, é preciso executar o comando <code>flask --app softdes run</code>, é gerado um servidor no link <strong>http://127.0.0.1:5000/</strong>. Com isso, será possível fazer todas as modificações com o servidor rodado, e caso queira fazer uma mudança depois, é possível fazer o deploy. </p>
 <p>Além disso, para (quase) finalizar as instações necessárias, esse projeto utiliza o Sqlite3 também. Para instalalá-lo, basta apenas rodar no terminal</p>
@@ -100,8 +99,10 @@ pip install flask_httpauth
 <p>Depois disso, é preciso rodar o arquivo <em>quiz.db</em>. A maneira mais eficaz de fazer isso é baixar mais uma instalação:</p>
 <pre><code>sudo apt install sqlitebrowser
 </code></pre>
+<p>Abra o <a href="https://sqlitebrowser.org/">DB Browser for SQLite</a> e abra o arquivo <em>quiz.db</em>. Na aba "<em>Browse Data</em>", é possível ver os usuários adicionados e seus tipos, como mostra <a href="../img/dbbrowser.png">essa foto</a>.</p>
+<p>Para logar, é preciso ter o usuário adicionado. A senha é o próprio nome do usuário, e é possível mudar ela dentro da página, conforme pode ser visto <a href="../img/servidor.png">aqui</a>.</p>
 <h2 id="estrutura-do-codigo-em-alto-nivel">Estrutura do código em alto nível</h2>
-<p>Base de dados SQL</p>
+<p>Esse código utiliza uma base de dados SQL (para os usuários) e o framework Flask para a criação do servidor que será utilizado.</p>
               
             </div>
           </div><footer>
